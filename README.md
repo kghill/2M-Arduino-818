@@ -70,10 +70,11 @@ Weight: 50 grams
 
 For questions or suggestions, you can contact us at:  ca.trackall@gmail.com
 
-### ![IMG_4695](https://user-images.githubusercontent.com/32202796/119374999-84330b80-bc77-11eb-917f-2f22f6777613.JPG)
-Pricing and Options
 
-For options and pricing follow this link:
+### Pricing and Options
+
+Price is built upon the addition of the basic board. Check out the following link for options and shipping costs.
+
 https://www.tindie.com/products/ballooner/2m-arduino-818/
 
 
