@@ -1,9 +1,9 @@
 # 2M-Arduino-818
 
 
-Note: A radio amateur license is required.
+#### Note: A radio amateur license is required.
 
-Description:
+### Description:
 
 The “2M Arduino 818” board was designed as a 2-Meter APRS unit for vehicle tracking, weather stations, and balloon launches. Other modes of transmission are possible such as RTTY, SSTV, etc.  
 
@@ -16,12 +16,12 @@ https://github.com/trackuino/trackuino
 
 The board includes a:
 
-•	GPS NEO-6M GPS module
-•	SA818 VHF Transceiver module for 500 mw or 1 W applications
-•	7-element low pass filter for 2 meters
-•	SMA Female 50-ohm connector
-•	DS18b20 sensor to measure internal and/or external temperatures
-•	Vin voltage sensor
+-	GPS NEO-6M GPS module
+-	SA818 VHF Transceiver module for 500 mw or 1 W applications
+-	7-element low pass filter for 2 meters
+-	SMA Female 50-ohm connector
+-	DS18b20 sensor to measure internal and/or external temperatures
+-	Vin voltage sensor
 
 
 Optional BME290: 
@@ -34,13 +34,16 @@ The board is configured for two voltage options:
 •	3.7-volt 1s lithium battery source
 
 
-Model: 2M Arduino 818-12v
+### Model: 2M Arduino 818-12v
+
 The 2M Arduino 818-12v board configuration is used with the Arduino Uno board. The intent of this option is to use it in a vehicle, boat, plane, etc. where a 12-volt battery is available and APRS position reporting is desired.  The voltage source to the boards is thru the DC jack. The onboard voltage regulator is used to power the 818 and other components via the Vin Pin. The digital level translation jumper is set to 5 volts.  
 
  
+![image](https://user-images.githubusercontent.com/32202796/119375562-2f43c500-bc78-11eb-90f3-e60b64849ac1.png)
 
 
-Model: 2M Arduino 818-3.7v
+### Model: 2M Arduino 818-3.7v
+
 The second option (Model: 2M Arduino 818-3.7v) is the low voltage, low power option. With this option, the regulator is not included and the digital level translation jumpers are set to 3.3 volts. The intent of this option is to use it for weather, balloon, and remote applications where solar panels and a 1s lithium battery are the power source. In this case, the APRS position, weather, and telemetry reporting are used.  
 
 The “Solar Power Pro Mini 1s” processor was designed for this low-power option. 
@@ -48,7 +51,8 @@ The “Solar Power Pro Mini 1s” processor was designed for this low-power opti
 WARNING: Do not use 2M Arduino 818-3.7v with the Arduino UNO board or equivalent.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Flexibility and Convivence:
+### Flexibility and Convivence
+
 The “2M Arduino 818” board was designed around the flexibility of the SA181 transceiver module. With the 818-transceiver module, it can be programmed to different frequencies and transmission modes. The ability to change frequencies will accommodate different APRS areas and jurisdictions.  Along with the APRS transmission mode, other modes such RTTY, SSTV, etc. can be used by switching frequencies. 
 
 Sensors are on one board along with a transceiver to provide a compact system for weather and voltage information.
@@ -62,9 +66,13 @@ Length: 7.5 cm
 
 Weight: 50 grams
 
-Support
+### Support
+
 For questions or suggestions, you can contact us at:  ca.trackall@gmail.com
+
+### ![IMG_4695](https://user-images.githubusercontent.com/32202796/119374999-84330b80-bc77-11eb-917f-2f22f6777613.JPG)
 Pricing and Options
+
 For options and pricing follow this link:
 https://www.tindie.com/products/ballooner/2m-arduino-818/
 
