@@ -30,8 +30,8 @@ An optional BME280 sensor can be installed to measure temperature, humidity, bar
 Instead, the I2C interface can be used for other I2C compatible devices.
 
 The board is configured for two voltage options:
-•	7-to-12-volt source 
-•	3.7-volt 1s lithium battery source
+-	7-to-12-volt source 
+-	3.7-volt 1s lithium battery source
 
 
 ### Model: 2M Arduino 818-12v
@@ -66,6 +66,69 @@ Length: 7.5 cm
 
 Weight: 50 grams
 
+
+# Trackuino Plus Software
+## Overview:
+The Trackuino Plus Software is a modified version of the original Trackuino software. The original version is found on github (https://github.com/trackuino/trackuino).  The Trackuino Plus Software has the following modifications: 
+-	adaptive vehicle beaconing
+-	telemetry reporting frame including bit status
+-	weather reporting frame
+-	addition of BME280 and DS18B20 sensors
+-	addition of power management. Power management for UNO board is used to save battery life or to prevent over heating by switching to low power. 
+-	flexible packet frame reporting
+-	818 configuration; frequency
+
+### Start-Up
+After configuration and initial power-up the GPS module will take awhile to find a fix. After lock the tracker begins to reporting and the full frame sequence will take 10 minutes. The following are the visual indication that the unit is working:
+-	On power-up the UNO Rx LED will be flashing
+-	After a cold start the GPS Lock LED will start flashing once a second
+-	After a GPS fix the PTT LED will flash
+
+
+## Basic Configuration:
+
+Configuration settings are found in the Arduino scketch (*.ino)  and in the configuration folder (config.h) in the library folder.  
+Too edit the “config.h” file you will need to download a C editor. I would recommend Microsoft Visual Studio Code. You can download the editor at this link. https://code.visualstudio.com/ 
+
+In the Arduino file *.ino, the adaptive beaconing, packet frame sequence, power management thresholds, and transmit frequency can be altered however, changing the settings are not necessary.
+Config.h file
+
+The first 100 lines are the User APRS settings. Beyond the first 100 lines are the hardware 2M hardware shield settings which I would recommend not changing.
+The APRS settings are: 
+-	Call sign		
+-	Digipeating paths	 
+- Period and slot transmission times
+- APRS Table/Symbol
+
+The following is an example of the user settings.
+- Call Sign	MyCallSign	SSID	11
+- Path:	WIDE1-1, Wide2-1		
+- APRS Table: 	“/” primary	APRS Symbol:	“>” (vehicle)
+- Time Slot-after the min:	40s	Reporting period (s):	60s
+
+### APRS symbols
+The APRS symbol designation comes in two parts, the symbol table ID and the symbol code. An APRS symbol table can be found at this link. https://www.yachttrack.org/info_camper/downloads/APRS_Symbol_Chart.pdf
+
+## Arduino *.ino
+
+The main thing to note is to set the Sketch book preference to the location of the folder that contains the “libraries” folder. The preference is found under the file tab of the Arduino editor.
+In the Arduino file *.ino, the adaptive beaconing, packet frame sequence, power management thresholds, and 818 transmitter configurations can be altered. Changes will require some program knowledge and familiarity with Arduino software. Here is a link for further information. https://www.arduino.cc/en/Guide. The file provides comments for guidance.
+ 
+### Adaptive beaconing
+The following website provides information on APRS settings for SSID and beaconing parameters.   http://www.ciinet.org/paul/aprs.html. 
+
+### Power Management
+The parameters that can be adjusted are;
+-	battWait: skips transmission until battery is recharged
+-	battLow: switch low power
+-	battHigh: used to reduce overheating
+
+### Frame sequence
+Allows the choice when, how often, and sequence of the different packets are transmitted. Transmission is skipped if power management is in effect. The following scenarios are possible by uncommenting the section of interest:
+818 Transmitter configurations
+Depending on the geographical location the APRS frequency differs. For the North American continent the frequency is set to “144.3900” . The commands for the 818 modules can be found at this link https://www.qsl.net/ta2ei/devreler/sa818/SA818%20programming%20manual.pdf
+
+
 ### Support
 
 For questions or suggestions, you can contact us at:  ca.trackall@gmail.com
@@ -73,10 +136,9 @@ For questions or suggestions, you can contact us at:  ca.trackall@gmail.com
 
 ### Pricing and Options
 
-Price is built upon the addition of the basic board. Check out the following link for options and shipping costs.
+Check out the following link for options and shipping costs.
 
 https://www.tindie.com/products/ballooner/2m-arduino-818/
-
 
 
 
