@@ -33,7 +33,7 @@ The board is configured for two voltage options:
 -	7-to-12-volt source 
 -	3.7-volt 1s lithium battery source
 
-# Case
+### Case
 A case is available for compact use in vechiles. Follow the link to https://www.thingiverse.com/thing:4890595. With the case and velcro the unit can mounted on the dash in a convient place. 
 
 ### Board Pricing and Options
