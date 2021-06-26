@@ -36,6 +36,9 @@ The board is configured for two voltage options:
 ### Case
 A case is available for compact use in vechiles. Follow the link to https://www.thingiverse.com/thing:4890595. With the case and velcro the unit can mounted on the dash in a convient place. 
 
+![IMG_5312](https://user-images.githubusercontent.com/32202796/123523174-3d25a500-d67f-11eb-8784-67be9c60640e.JPG)
+
+
 ### Board Pricing and Options
 
 Check out the following link for options and shipping costs.
