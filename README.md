@@ -38,7 +38,8 @@ The board is configured for two voltage options:
 
 The 2M Arduino 818-12v board configuration is used with the Arduino Uno board. The intent of this option is to use it in a vehicle, boat, plane, etc. where a 12-volt battery is available and APRS position reporting is desired.  The voltage source to the boards is thru the DC jack. The onboard voltage regulator is used to power the 818 and other components via the Vin Pin. The digital level translation jumper is set to 5 volts.  
 
-The board uses the LM1085IT-ADJ regulator which has overheating and over-current protection. If you plan to use the board in ambient temperatures of 100 F (38C) and above, consider using a voltage adapter to provide an output voltage of 7 to 9 volts. In all cases ensure that the unit is properly ventilated.
+### Note: 
+The board needs adequate ventilation. If you plan to use the board where the ambient temperature is 100 F (38v) or above consider using a voltage adapter to provide an output voltage of 7 to 9 volts. The board does use the LM1085IT-ADJ regulator which provides overheating and over-current protection.
 
  
 ![image](https://user-images.githubusercontent.com/32202796/119375562-2f43c500-bc78-11eb-90f3-e60b64849ac1.png)
