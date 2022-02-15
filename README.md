@@ -41,9 +41,7 @@ A case is available for compact use in vechiles. Follow the link to https://www.
 
 ### Board Pricing and Options
 
-Check out the following link for options and shipping costs.
-
-https://www.tindie.com/products/ballooner/2m-arduino-818/
+For pricing and options please contact me at: catrackall@gmail.com
 
 
 ### Model: 2M Arduino 818-12v
